@@ -6,7 +6,7 @@ import {
   Paging,
 } from "@elastic/react-search-ui";
 import { Layout } from "@elastic/react-search-ui-views";
-import searchConfig from "./SearchConfig";
+import searchConfig from "../SearchConfig/SearchConfig";
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
 import ResultContainer from "./SearchResult/ResultContainer";
 import Pagination from "../components/Pagination";

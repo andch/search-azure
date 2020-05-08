@@ -1,4 +1,4 @@
-import SearchConnector from "./SearchConnector/SearchConnector";
+import SearchConnector from "../SearchConnector/SearchConnector";
 
 const connector = new SearchConnector({
   endpoint: "https://azs-playground.search.windows.net/indexes/nycjobs/docs",
