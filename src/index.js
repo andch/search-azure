@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import SampleSearch from "./search/SearchBox";
+import SampleSearch from "./containers/SearchBox";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
