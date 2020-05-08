@@ -1,6 +1,6 @@
 export default function adaptRequest(state, queryConfig) {
   const { searchTerm, resultsPerPage, current, sortField } = state;
-  // Get correct date from filters.
+  // @TODO Maybe need rebuild.
   return {
     q: searchTerm,
     count: resultsPerPage,

@@ -8,7 +8,7 @@ const connector = new SearchConnector({
 
 const config = {
   initialState: {
-    resultsPerPage: 24,
+    resultsPerPage: 10,
   },
   // searchQuery: {
   //   extraParams: {

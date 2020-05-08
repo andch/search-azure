@@ -11,8 +11,8 @@ export const getResults = (records) => {
 
 export function adaptResponse(response, resultsPerPage) {
   const results = response.value ? getResults(response.value) : [];
-  const totalPages = Math.ceil(response.value.length / resultsPerPage);
-  const totalResults = response.value.length;
+  const totalPages = Math.ceil(response["@odata.count"] / resultsPerPage);
+  const totalResults = response["@odata.count"];
   return {
     results,
     totalPages,

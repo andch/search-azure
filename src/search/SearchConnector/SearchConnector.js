@@ -63,19 +63,23 @@ class SearchConnector {
   }
 
   async search(query) {
+    // @TODO Maybe need rebuild.
+    const startFromItem = query.start;
+    const endFromItem = query.count;
     const params = {
-      search: `${querystring.stringify(query)}`,
+      search: `${querystring.stringify(query.q)}`,
       "api-version": this.apiVersion,
+      $count: true,
+      $skip: startFromItem,
+      $top: endFromItem,
     };
     const endpointWithParams = createUrlQuery(this.endpoint, params);
-    console.log(query);
     const response = await fetch(`${endpointWithParams}`, {
       method: "GET",
       headers: {
         "api-key": this.apiKey,
       },
     });
-
     return response.json();
   }
 

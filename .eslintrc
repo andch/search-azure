@@ -14,6 +14,7 @@
     "semi": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/forbid-prop-types": [2, { "forbid": [] }],
+    "react/jsx-props-no-spreading": [0],
     "camelcase": [1, {"ignoreDestructuring": true}],
     "prettier/prettier": [
       "error", {
